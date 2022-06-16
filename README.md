@@ -37,7 +37,7 @@ See `ydokey -h` for more info.
 
 ## Installation
 
-TODO: Write installation instructions here
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/ydokey)
 
 ## Contributing
 
