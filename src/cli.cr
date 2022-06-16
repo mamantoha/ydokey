@@ -30,9 +30,6 @@ option_parser = OptionParser.parse do |parser|
   parser.on("-l", "--list", "List available keys codes") do
     Ydokey.list_keys.each { |k| puts k }
     exit
-  rescue ex : Ydokey::FileNotFoundError
-    STDERR.puts ex.message
-    exit(1)
   end
 
   parser.on("-h", "--help", "Show this help") do

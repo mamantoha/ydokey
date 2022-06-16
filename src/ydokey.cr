@@ -12,9 +12,6 @@ module Ydokey
   class UnknownKeyError < Exception
   end
 
-  class FileNotFoundError < Exception
-  end
-
   # Input event codes
   CODES_FILE = "/usr/include/linux/input-event-codes.h"
 
@@ -33,11 +30,13 @@ module Ydokey
 
   @@key_mappings : Hash(String, Int32)?
 
-  def key_mappings : Hash(String, Int32)
-    raise FileNotFoundError.new("Error opening file: '#{CODES_FILE}'") unless File.exists?(CODES_FILE)
+  def codes_file
+    {{ read_file(CODES_FILE) }}
+  end
 
+  def key_mappings : Hash(String, Int32)
     @@key_mappings ||=
-      File.read_lines(CODES_FILE).reduce({} of String => Int32) do |acc, line|
+      codes_file.lines.reduce({} of String => Int32) do |acc, line|
         if (m = KEY_REGEX.match(line))
           acc[m["key"].downcase] = m["keycode"].to_i(prefix: true)
         end
