@@ -11,7 +11,7 @@ confinement: strict
 type: app
 architectures: [amd64]
 
-license: MIT License
+license: MIT
 
 layout:
   /usr/include/linux/input-event-codes.h:
