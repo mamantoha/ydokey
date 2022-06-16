@@ -8,7 +8,10 @@ description: |
 grade: stable
 confinement: strict
 
+type: app
 architectures: [amd64]
+
+license: MIT License
 
 layout:
   /usr/include/linux/input-event-codes.h:
