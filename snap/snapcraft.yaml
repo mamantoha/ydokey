@@ -1,0 +1,24 @@
+name: ydokey
+base: core20
+version: '0.1.0'
+summary: Convent key commands to raw keycodes for ydotool
+description: |
+  A simple command-line utility for Linux to convent key commands to raw keycodes which used in ydotool
+
+grade: stable
+confinement: strict
+
+architectures: [amd64]
+
+layout:
+  /usr/include/linux/input-event-codes.h:
+    bind-file: $SNAP/usr/include/linux/input-event-codes.h
+
+apps:
+  ydokey:
+    command: bin/ydokey
+
+parts:
+  ydokey:
+    plugin: crystal
+    source: ./
