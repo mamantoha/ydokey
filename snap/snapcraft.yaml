@@ -4,14 +4,20 @@ version: '0.1.0'
 summary: Convent key commands to raw keycodes for ydotool
 description: |
   A simple command-line utility for Linux to convent key commands to raw keycodes which used in ydotool
+contact: anton.maminov@gmai.com
 
 grade: stable
 confinement: strict
 
 type: app
 architectures: [amd64]
+compression: lzo
 
 license: MIT
+
+website: https://github.com/mamantoha/ydokey
+issues: https://github.com/mamantoha/ydokey/issues
+source-code: https://github.com/mamantoha/ydokey.git
 
 layout:
   /usr/include/linux/input-event-codes.h:
