@@ -1,5 +1,9 @@
 # ydokey
 
+[![Built with Crystal](https://img.shields.io/badge/built%20with-crystal-000000.svg?style=?style=plastic&logo=appveyor)](https://crystal-lang.org/)
+[![Crystal CI](https://github.com/mamantoha/ydokey/actions/workflows/crystal.yml/badge.svg)](https://github.com/mamantoha/ydokey/actions/workflows/crystal.yml)
+[![GitHub release](https://img.shields.io/github/release/mamantoha/ydokey.svg)](https://github.com/mamantoha/ydokey/releases)
+
 A simple command-line utility for Linux to convent key commands to raw keycodes which used in [ydotool](https://github.com/ReimuNotMoe/ydotool)
 
 ## The Why & The How
