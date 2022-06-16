@@ -38,7 +38,12 @@ option_parser = OptionParser.parse do |parser|
   end
 
   parser.on("-v", "--version", "Print program version") do
-    puts Ydokey::VERSION
+    default_target = Crystal::DESCRIPTION.split.last
+    release_date = {{ `date -R`.stringify.chomp }}
+
+    puts "ydokey #{Ydokey::VERSION} (#{default_target}) crystal/#{Crystal::VERSION}"
+    puts "Release-Date: #{Time.parse_rfc2822(release_date).to_s("%Y-%m-%d")}"
+
     exit
   end
 

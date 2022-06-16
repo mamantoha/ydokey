@@ -19,7 +19,10 @@ describe "ydokey command" do
     end
 
     it "returns a version for option -v" do
-      ydokey("-v")[:out].should eq(Ydokey::VERSION)
+      version = ydokey("-v")[:out]
+
+      version.should contain("ydokey #{Ydokey::VERSION}")
+      version.should contain("Release-Date")
     end
 
     it "returns raw key codes for option -k" do
