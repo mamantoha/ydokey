@@ -1,0 +1,13 @@
+name: ydokey
+version: 0.1.0
+
+authors:
+  - Anton Maminov <anton.maminov@gmail.com>
+
+targets:
+  ydokey:
+    main: src/cli.cr
+
+crystal: ">= 1.0.0"
+
+license: MIT
