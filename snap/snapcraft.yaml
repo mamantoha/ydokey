@@ -1,9 +1,9 @@
 name: ydokey
 base: core20
 version: '0.3.1'
-summary: Convent key commands to raw keycodes for ydotool
+summary: Convert key commands to raw keycodes for ydotool
 description: |
-  A simple command-line utility for Linux to convent key commands to raw keycodes which used in ydotool
+  A simple command-line utility for Linux to convert key commands to raw keycodes which used in ydotool
 contact: anton.maminov@gmai.com
 
 grade: stable

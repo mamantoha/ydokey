@@ -5,7 +5,7 @@
 [![GitHub release](https://img.shields.io/github/release/mamantoha/ydokey.svg)](https://github.com/mamantoha/ydokey/releases)
 [![ydokey](https://snapcraft.io/ydokey/badge.svg)](https://snapcraft.io/ydokey)
 
-A simple command-line utility for Linux to convent key commands to raw keycodes which used in [ydotool](https://github.com/ReimuNotMoe/ydotool)
+A simple command-line utility for Linux to convert key commands to raw keycodes which used in [ydotool](https://github.com/ReimuNotMoe/ydotool)
 
 ## The Why & The How
 

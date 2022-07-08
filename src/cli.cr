@@ -4,7 +4,7 @@ require "./ydokey"
 option_parser = OptionParser.parse do |parser|
   parser.banner = <<-BANNER
   NAME
-      #{Ydokey::NAME} - command-line utility to convent key commands to raw keycodes which used in ydotool
+      #{Ydokey::NAME} - command-line utility to convert key commands to raw keycodes which used in ydotool
 
   VERSION
       #{Ydokey::VERSION}
