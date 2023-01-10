@@ -1,5 +1,5 @@
 name: ydokey
-version: 0.4.1
+version: 0.4.2
 
 authors:
   - Anton Maminov <anton.maminov@gmail.com>
@@ -8,6 +8,6 @@ targets:
   ydokey:
     main: src/cli.cr
 
-crystal: 1.6.1
+crystal: 1.7.0
 
 license: MIT

@@ -1,7 +1,7 @@
 module Ydokey
   extend self
 
-  VERSION = "0.4.1"
+  VERSION = "0.4.2"
   NAME    = "ydokey"
 
   enum KeyEvent
