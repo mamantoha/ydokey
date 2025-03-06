@@ -3,21 +3,21 @@ require "./ydokey"
 
 option_parser = OptionParser.parse do |parser|
   parser.banner = <<-BANNER
-  NAME
-      #{Ydokey::NAME} - command-line utility to convert key commands to raw keycodes which used in ydotool
+    NAME
+        #{Ydokey::NAME} - command-line utility to convert key commands to raw keycodes which used in ydotool
 
-  VERSION
-      #{Ydokey::VERSION}
+    VERSION
+        #{Ydokey::VERSION}
 
-  SYNOPSIS
-      #{Ydokey::NAME} [arguments]
+    SYNOPSIS
+        #{Ydokey::NAME} [arguments]
 
-      You can use #{Ydokey::NAME} together with ydotool
+        You can use #{Ydokey::NAME} together with ydotool
 
-      ydotool key $(#{Ydokey::NAME} -k Ctrl+Meta+Right)
+        ydotool key $(#{Ydokey::NAME} -k Ctrl+Meta+Right)
 
-  ARGUMENTS
-  BANNER
+    ARGUMENTS
+    BANNER
 
   parser.on("-k COMMAND", "--key=COMMAND", "Specifies the key command (e.g. Ctrl+F1, Alt+Tab, Ctrl+Shift+Meta+Right, VolumeUp, etc)") do |input|
     puts Ydokey.to_key_codes(input)

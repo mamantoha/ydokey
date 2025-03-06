@@ -37,7 +37,7 @@ module Ydokey
   def key_mappings : Hash(String, Int32)
     @@key_mappings ||=
       codes_file.lines.reduce({} of String => Int32) do |acc, line|
-        if (m = KEY_REGEX.match(line))
+        if m = KEY_REGEX.match(line)
           acc[m["key"].downcase] = m["keycode"].to_i(prefix: true)
         end
 
