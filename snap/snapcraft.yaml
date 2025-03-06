@@ -1,6 +1,6 @@
 name: ydokey
 base: core20
-version: '0.4.2'
+version: '0.4.3'
 summary: Convert key commands to raw keycodes for ydotool
 description: |
   A simple command-line utility for Linux to convert key commands to raw keycodes which used in ydotool
